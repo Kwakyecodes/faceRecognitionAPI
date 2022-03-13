@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Face recognition API</title>
+    </head>
+    <body>
+        <div>
+            <h1>Learn a new face</h1>
+            <hr>
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input autocomplete="off" Required name="name" placeholder="Enter name of person" type="text">
+                <div>
+                    <input type="file" Required name="image">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
